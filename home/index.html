@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/home/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e550f88b2c.js" crossorigin="anonymous"></script>
+    <title>Home - SleazeStiKs</title>
+</head>
+
+<body>
+    <div class="grid-wrapper">
+        <header>
+            <nav class="header-inner">
+                <a class="header-logo" href="/" sveltekit:prefetch="">
+                    <i class="fab fa-vuejs"></i>
+                    Sleaze
+                </a>
+                <div class="divider" role="separator"></div> 
+                <a class="item selected" href="/home">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.55 2.53c.84-.7 2.06-.7 2.9 0l6.75 5.7c.5.42.8 1.05.8 1.71v9.8c0 .97-.78 1.76-1.75 1.76h-3.5c-.97 0-1.75-.79-1.75-1.75v-5.5a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25v5.5c0 .96-.78 1.75-1.75 1.75h-3.5C3.78 21.5 3 20.7 3 19.75v-9.8c0-.67.3-1.3.8-1.73l6.75-5.69zm1.93 1.15a.75.75 0 00-.96 0l-6.75 5.7a.75.75 0 00-.27.56v9.8c0 .14.11.26.25.26h3.5c.14 0 .25-.12.25-.25v-5.5c0-.97.78-1.75 1.75-1.75h3.5c.97 0 1.75.78 1.75 1.75v5.5c0 .13.11.25.25.25h3.5c.14 0 .25-.12.25-.25v-9.8c0-.23-.1-.44-.27-.58l-6.75-5.7z"></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a class="item" href="/blog">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 6a1 1 0 011-1h8a1 1 0 011 1v2a1 1 0 01-1 1H8a1 1 0 01-1-1V6zm1.5 1.5h7v-1h-7v1z"></path>
+                        <path d="M4 4.5A2.5 2.5 0 016.5 2H18a2.5 2.5 0 012.5 2.5v14.25c0 .41-.34.75-.75.75H5.5a1 1 0 001 1h13.25a.75.75 0 010 1.5H6.5A2.5 2.5 0 014 19.5v-15zM5.5 18H19V4.5a1 1 0 00-1-1H6.5a1 1 0 00-1 1V18z"></path>
+                    </svg>
+                    <span>Blog</span>
+                </a>
+            </nav>
+            <nav class="header-outer">
+                <a class="button-small" href="https://github.com/sleazestiks" title="GitHub" target="_blank">
+                    <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.07 18.94l6.5-14.5a.75.75 0 011.4.52l-.04.1-6.5 14.5a.75.75 0 01-1.4-.52l.04-.1 6.5-14.5-6.5 14.5zm-5.85-7.47l4.25-4.25a.75.75 0 011.13.98l-.07.08L3.81 12l3.72 3.72a.75.75 0 01-.98 1.13l-.08-.07-4.25-4.25a.75.75 0 01-.07-.98l.07-.08 4.25-4.25-4.25 4.25zm14.25-4.25a.75.75 0 01.98-.07l.08.07 4.25 4.25c.27.27.3.68.07.98l-.07.08-4.25 4.25a.75.75 0 01-1.13-.98l.07-.08L20.19 12l-3.72-3.72a.75.75 0 010-1.06z">
+                        </path>
+                    </svg>
+                </a>
+            </nav>
+        </header>
+
+        <div class="body">
+            <section id="about" class="about">
+                <span class="header-chip">About</span>
+                <h2 class="title-text">Sleaze</h2>
+                <div class="about-text">
+                    <p>
+                        I'm Sleaze, a passionate coder and gamer! I love to make websites, 
+                        games and fiddle around with any sort of technical stuff. I'm coding 
+                        since 2020 and you can check out my work on my Github!
+                    </p>
+                    <p>
+                        I also play a lot of games with my friends and by myself! I started of 
+                        playing Minecraft for over 7 years and over time slowly expanded to 
+                        shooters like Valorant, Star Wars: Battlefront II and PUBG.
+                    </p>
+                </div>
+                <div class="button-container">
+                    <a class="button-contact" href="https://github.com/sleazestiks/" target="_blank">
+                        <i class="fas fa-code" style="font-size: 14px;"></i>
+                        <div class="hero-button-inner">
+                            <h5>View GitHub</h5>
+                            <span>@SleazeStiKs</span>
+                        </div>
+                    </a>
+                    <a class="button-contact" href="https://twitter.com/sleazestiks/" target="_blank">
+                        <i class="fab fa-twitter" style="font-size: 18px;"></i>
+                        <div class="hero-button-inner">
+                            <h5>Visit Twitter</h5>
+                            <span>@SleazeStiKs</span>
+                        </div>
+                    </a>
+                    <a class="button-contact" href="https://github.com/minecraft-tournament/" target="_blank">
+                        <i class="fas fa-user-friends" style="font-size: 14px;"></i>
+                        <div class="hero-button-inner">
+                            <h5>Visit Organization</h5>
+                            <span>@Minecraft-Tournament</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <span class="header-chip">Projects</span>
+                
+            </section>
+
+            <section id="contact" class="contact">
+                <span class="header-chip">Contact</span>
+
+                <div class="buttons-spacer">
+                    <a class="button-blue" href="#blue_btn" target="_blank">
+                        Twitter
+                    </a>
+                    <a class="hyperlink-button" href="#hyperlink_btn" target="_blank">
+                        Github
+                    </a>
+                    <a class="hyperlink-button" href="#hyperlink_btn" target="_blank">
+                        Slack
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <span class="copyright">
+                <span>© 2022 SleazeStiKs</span>
+                <span>All rights reserved.</span>
+            </span>
+
+            <ul class="social-links">
+                <a href="https://github.com/SleazeStiKs" target="blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://twitter.com/SleazeStiKs" target="blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+
+</html>
+
+<!--
+    <i class="fas fa-award"></i>
+-->
