@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="/blog/posts/markdown_style.css" rel="stylesheet">
     <link href="/style.css" rel="stylesheet">
-    <script src="/blog/post/js/setParameters.js"></script>
     <script src="https://kit.fontawesome.com/e550f88b2c.js" crossorigin="anonymous"></script>
-    <title>Home - SleazeStiKs</title>
+    <title>Creating the Blog</title>
 </head>
-
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/blog/post/js/getURLData.js"></script>
+    <script>
+        var blogID = getURLParameter('id');
+
+        const _text = "";
+        fetch('/blog/posts/' + blogID + ".md")
+            .then(response => response.text())
+            .then(text => parseContent(text))
+
+        function parseContent(content) {
+            document.getElementById('content').innerHTML = marked.parse(content);
+        }
+    </script>
+
     <div class="grid-wrapper">
         <header>
             <nav class="header-inner">
@@ -51,39 +64,7 @@
         </header>
 
         <div class="body">
-            <section id="blog" class="blog">
-                <span class="header-chip">Blog</span>
-                <div class="blog-grid">
-                    <div class="blog-item">
-                        <a class="overlay" id="params-link" onclick="addParameter('creating-the-blog');"></a>
-                        <h2 class="blog-item-title">Creating the Blog</h2>
-                        <span class="blog-item-subtitle">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </span>
-                        <span class="blog-item-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ea quos, ipsum itaque quia provident excepturi quas impedit?
-                            Corporis quam reprehenderit suscipit, quas veniam rem aliquam
-                            iste eum aperiam sequi error. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.
-                        </span>
-                        <div class="blog-item-type-date">
-                            <div class="blog-item-type">
-                                <span class="dev-blog">
-                                    Dev Blog
-                                </span>
-                            </div>
-                            <div class="blog-item-hyphen">
-                                <span>-</span>
-                            </div>
-                            <div class="blog-item-date">
-                                <span>20.01.2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
+            <div id="content"></div>
         </div>
 
         <footer>
@@ -105,5 +86,4 @@
 
     </div>
 </body>
-
 </html>

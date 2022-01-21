@@ -473,13 +473,13 @@ footer {
 .blog-item-title {
     display: flex;
     margin: 0;
-    padding: 1rem 2rem 0 2rem;
+    padding: 1rem 1.5rem 0 1.5rem;
 }
 
 .blog-item-subtitle {
     display: flex;
     margin: 0;
-    padding: 0 2rem 0 2rem;
+    padding: 0 1.5rem 0 1.5rem;
     margin-bottom: 0.425rem;
 
     font-style: italic;
@@ -489,7 +489,7 @@ footer {
 .blog-item-content {
     display: flex;
     color: var(--color-text-secondary);
-    padding: 0 2rem 0 2rem;
+    padding: 0 1.5rem 0 1.5rem;
     margin: 0.425rem 0 0.5rem 0;
 }
 
@@ -498,7 +498,7 @@ footer {
     flex-direction: row;
     margin-top: auto;
 
-    padding: 0 2rem 0.95rem 2rem;
+    padding: 0 1.5rem 0.95rem 1.5rem;
     margin-top: 0.5rem;
 }
 
