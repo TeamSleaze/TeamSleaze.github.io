@@ -276,16 +276,16 @@ footer {
 
 
 .about {
-    padding: 1rem 0;
+    padding: 1rem 0 2.5rem;
 }
 
 .projects {
-    padding: 1rem 0;
+    padding: 1rem 0 3.4rem;
     border-top: 1px solid var(--color-button-selected);
 }
 
 .contact {
-    padding: 1rem 0;
+    padding: 1rem 0 1.5rem;
     border-top: 1px solid var(--color-button-selected);
 }
 
