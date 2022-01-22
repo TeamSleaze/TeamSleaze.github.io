@@ -460,7 +460,7 @@ footer {
     display: flex;
     flex-direction: column;
     
-    min-height: 14rem;
+    height: 14rem;
     width: 33rem;
     max-width: calc(100% - 2.5rem);
 
@@ -530,9 +530,14 @@ a.overlay {
     position: absolute;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
-
-
-
+.fade-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: -webkit-linear-gradient(#ffffff, #ffffff00);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
 
