@@ -9,6 +9,7 @@
     max-width: 48rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
     width: calc(100% - 8rem);
 
     text-align: left;
@@ -372,6 +373,8 @@ mark {
 
 /* Style Website */
 :root {
+    --invisible: #ffffff00;
+
     --color-text-primary: #ffffff;
     --color-text-secondary: #bfbfbf;
 
@@ -553,7 +556,8 @@ footer {
 .latest-posts {
     display: flex;
     flex-direction: column;
-    margin: 8rem 0 0.5rem 0;
+    margin: 40px 0 0.5rem 0;
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 .latest-posts-title {
@@ -679,6 +683,24 @@ a.overlay {
    -webkit-background-clip: text;
    background-clip: text;
    -webkit-text-fill-color: transparent;
+}
+
+.latest-update {
+    display: flex;
+    margin: 1.75rem 0 0 0;
+}
+
+.latest-update-text {
+    font-size: 0.85em;
+    text-decoration: underline var(--invisible);
+    color: var(--color-text-secondary);
+
+    margin: 0;
+    padding: 0;
+}
+
+.latest-update-text:hover {
+    text-decoration: underline var(--color-text-secondary);
 }
 
 

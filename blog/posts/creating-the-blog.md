@@ -48,3 +48,10 @@ In the future I plan to add custom features, to be able to display charts, synta
         <label for="cb_syntax_highlighting">Syntax Highlighting in code blocks</label>
     </div>   
 </div>
+
+
+<a class="latest-update" href="https://github.com/SleazeStiKs/SleazeStiKs.github.io/commits/main/blog/posts/creating-the-blog.md">
+    <p class="blog-item-date latest-update-text">
+        Last Updated 23.01.2021
+    </p>
+</a>
