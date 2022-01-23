@@ -139,6 +139,10 @@ pre {
     overflow-x: auto;
 }
 
+pre code {
+    background-color: transparent;
+}
+
 [class=cb-20] {
     width: 20rem;
 }
@@ -705,7 +709,6 @@ a.overlay {
 
 
 
-
 /* width */
 ::-webkit-scrollbar {
   width: 12px;
@@ -725,3 +728,15 @@ a.overlay {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(95, 95, 95)242;
 }
+
+
+[type="checkbox"] {
+    -ms-transform: scale(1.1); /* IE */
+    -moz-transform: scale(1.1); /* FF */
+    -webkit-transform: scale(1.1); /* Safari and Chrome */
+    -o-transform: scale(1.1); /* Opera */
+    transform: scale(1.1);
+}
+
+
+
