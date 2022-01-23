@@ -127,20 +127,17 @@ pre {
     display: block;
     font-size: 97.5%;
     color: var(--color-text-secondary);
-    border-radius: 4px;
     background-color: #0d0e0f;
-
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    
+    padding: 10px 10px 10px 16px;
+    border-radius: 4px;
 
     overflow-x: auto;
 }
 
 pre code {
     background-color: transparent;
+    padding: 0;
 }
 
 [class=cb-20] {
