@@ -51,7 +51,7 @@ In the future I plan to add custom features, to be able to display charts, synta
 
 <!-- Last Update Date -->
 <a class="latest-update" href="https://github.com/SleazeStiKs/SleazeStiKs.github.io/commits/main/blog/posts/creating-the-blog.md" target="_blank">
-    <p class="blog-item-date latest-update-text">
-        Last Updated 23.01.2021
+    <p class="blog-item-date latest-update-text" id="latest-commit-date">
+        Last Updated
     </p>
 </a>

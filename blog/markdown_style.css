@@ -590,7 +590,6 @@ footer {
     gap: 2.5rem;
 
     padding: 2rem;
-    margin: 0 1.5rem;
     text-align: left;
 }
 
@@ -604,8 +603,8 @@ footer {
     display: flex;
     flex-direction: column;
     
-    height: 14rem;
-    width: 33rem;
+    height: 16rem;
+    width: 32rem;
     max-width: calc(100% - 2.5rem);
 
     background-color: var(--color-foreground);
@@ -642,8 +641,7 @@ footer {
     flex-direction: row;
     margin-top: auto;
 
-    padding: 0 1.5rem 0.95rem 1.5rem;
-    margin-top: 0.5rem;
+    padding: 0.25rem 1.5rem 0.95rem 1.5rem;
 }
 
 .blog-item-type span {
