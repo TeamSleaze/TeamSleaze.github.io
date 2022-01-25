@@ -1,7 +1,7 @@
 <p class="blog-title">Creating the Blog</p>
 
 <div class="blog-item-type-date">
-    <p class="blog-item-date">22.01.2021</p>
+    <p class="blog-item-date">Jan 22, 2022</p>
     <p class="blog-item-hyphen">-</p>
     <p class="blog-item-type dev-blog">Dev Blog</p>
 </div>
