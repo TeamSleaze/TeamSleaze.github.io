@@ -25,7 +25,7 @@
             document.getElementById('content').innerHTML = marked.parse(content);
         }
 
-        fetchDate(blogID + ".md");
+        fetchDate(blogID);
         
     </script>
 
@@ -70,9 +70,7 @@
             <div class="content" id="content"></div>
             <!-- Last Update Date -->
             <div class="content-latest-update">
-                <a class="latest-update"
-                href="https://github.com/SleazeStiKs/SleazeStiKs.github.io/commits/main/blog/posts/creating-the-blog.md"
-                target="_blank">
+                <a class="latest-update" href="" target="_blank" id="latest-update-link">
                     <p class="blog-item-date latest-update-text" id="latest-commit-date">
                         Last Updated
                     </p>

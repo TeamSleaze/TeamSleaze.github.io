@@ -1,5 +1,5 @@
 async function fetchDate(name) {
-    let response = await fetch('https://api.github.com/repos/SleazeStiKs/SleazeStiKs.github.io/commits?path=blog/posts/' + name);
+    let response = await fetch('https://api.github.com/repos/SleazeStiKs/SleazeStiKs.github.io/commits?path=blog/posts/' + name  + ".md");
 
     if (response.status === 200) {
         let data = await response.json();
@@ -27,4 +27,9 @@ async function fetchDate(name) {
         var date = month + ' ' + day + ', ' + year;
         document.getElementById('latest-commit-date').innerHTML = "Last Updated - " + date;
     }
+}
+
+window.onload=()=>{
+    var href = "https://github.com/SleazeStiKs/SleazeStiKs.github.io/commits/main/blog/posts/" + blogID + ".md";
+    document.getElementById('latest-update-link').href = href;
 }
