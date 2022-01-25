@@ -4,12 +4,20 @@
     --custom_checkbox_color_aqua: #00afdb;
 }
 
-#content {
-    padding: 15px;
+.content {
+    padding: 15px 15px 0 15px;
     max-width: 48rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
+    width: calc(100% - 8rem);
+
+    text-align: left;
+}
+
+.content-latest-update {
+    padding: 0 15px 15px 15px;
+    margin: 0 auto 60px auto;
+    max-width: 48rem;
     width: calc(100% - 8rem);
 
     text-align: left;
@@ -686,7 +694,7 @@ a.overlay {
 
 .latest-update {
     display: flex;
-    margin: 1.75rem 0 0 0;
+    margin: 0.75rem 0 0 0;
 }
 
 .latest-update-text {
