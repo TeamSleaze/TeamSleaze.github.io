@@ -543,6 +543,7 @@ a.overlay {
     text-overflow: ellipsis;
     background: -webkit-linear-gradient(#ffffff, #ffffff00);
    -webkit-background-clip: text;
+   background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 
