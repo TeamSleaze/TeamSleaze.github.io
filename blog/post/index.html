@@ -10,6 +10,7 @@
     <title>Creating the Blog</title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="/blog/post/js/setParameters.js"></script>
     <script src="/blog/post/js/getURLData.js"></script>
@@ -17,13 +18,29 @@
     <script>
         var blogID = getURLParameter('id');
 
-        const _text = "";
-        fetch('/blog/posts/' + blogID + ".md")
-            .then(response => response.text())
-            .then(text => parseContent(text))        
+        fetch('/blog/posts/' + blogID + '.md')
+            .then(response => {
+                if (!response.ok) getCouldNotLoadFile();
+                else {
+                    async function getText() {
+                        parseContent(await response.text());
+                    }
+                    getText();
+                } 
+            })        
 
         function parseContent(content) {
             document.getElementById('content').innerHTML = marked.parse(content);
+        }
+
+        function getCouldNotLoadFile() {
+            fetch('/blog/posts/error/cannot-get-page.md')
+                .then(response => {
+                    async function getText() {
+                        parseContent(await response.text());
+                    }
+                    getText();
+                })
         }
 
         fetchDate(blogID);
@@ -69,6 +86,7 @@
 
         <div class="body">
             <div class="content" id="content"></div>
+
             <!-- Last Update Date -->
             <div class="content-latest-update">
                 <a class="latest-update" href="" target="_blank" id="latest-update-link">
@@ -77,7 +95,8 @@
                     </p>
                 </a>
             </div>
-            
+
+            <div class="spacer"></div>
 
             <div class="latest-posts">
                 <span class="latest-posts-title">Looking For More?</span>

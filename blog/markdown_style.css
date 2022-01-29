@@ -416,6 +416,7 @@ body {
 .grid-wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -454,6 +455,7 @@ footer {
     background-color: var(--color-foreground);
     
     border-top: 1px solid var(--color-button-selected);
+    flex-basis: 50px;
     padding: 5px 0;
 }
 
@@ -483,6 +485,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin: 15px 0;
+    flex-grow: 1;
 }
 
 .header-chip {
@@ -741,5 +744,29 @@ a.overlay {
     transform: scale(1.1);
 }
 
+.spacer {
+    display: flex;
+    flex-grow: 1;
+}
 
+.button-blue {
+    border-radius: var(--control-corner-radius);
+    padding: 5px 10px 6px;
+    transition: background-color 300ms ease;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    word-break: break-word;
+    
+    background-color: var(--color-button-blue-unselected);
+    color: black;
+    text-decoration: none;
+}
+
+.button-blue:hover {
+    background-color: var(--color-button-blue-selected);
+    text-decoration: none;
+}
 
