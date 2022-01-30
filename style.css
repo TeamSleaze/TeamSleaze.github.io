@@ -295,6 +295,7 @@ footer {
 .header-inner {
     align-items: center;
     display: flex;
+    margin-left: 0.25rem;
 }
 
 
