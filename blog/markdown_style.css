@@ -178,13 +178,19 @@ code {
 
 a {
     color: #0365ad;
-    display: unset;
     text-decoration: underline #353535;
     transition: 250ms ease;
 }
 
 a:hover {
     text-decoration: underline #0365ad;
+}
+
+#a-logo {
+    display: flex;
+    align-items: center;
+    color: var(--color-text-primary);
+    text-decoration: none;
 }
 
 table {
@@ -516,24 +522,18 @@ footer {
 
 
 .header-logo {
-    margin: 0 0 0 5px;
-    padding: 0 5px;
-    
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--text-color-primary);
-    text-decoration: none;
+    margin-left: 2.5px;
+    padding: 0 2.5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
 }
 
 .divider {
     -webkit-border-start: 2px solid var(--color-button-unselected);
     border-inline-start: 2px solid var(--color-button-unselected);
     height: 30px;
-    margin: 0 8px;
+    margin: 0 6px;
 }
 
 .item {
