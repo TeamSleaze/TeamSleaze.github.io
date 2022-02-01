@@ -133,10 +133,21 @@ footer {
 .body {
     display: flex;
     flex-direction: column;
+    flex: auto;
     text-align: center;
     padding: 10px 0;
-    margin: 15px 0;
-    flex-grow: 1;
+    margin: 15px 0 0 0;
+    justify-content: space-between;
+}
+
+.body-upper {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-lower {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-chip {
@@ -558,3 +569,4 @@ a.overlay {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(95, 95, 95)242;
 }
+
