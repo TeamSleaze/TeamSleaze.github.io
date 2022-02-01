@@ -424,6 +424,7 @@ footer {
 .project-container-left-text {
     display: flex;
     font-size: 0.98rem;
+    margin-right: 5px;
 }
 
 .project-image {
