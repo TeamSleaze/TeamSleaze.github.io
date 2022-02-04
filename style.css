@@ -412,6 +412,7 @@ footer {
     gap: 0.35rem;
     
     padding-left: 5px;
+    flex-grow: 1;
 }
 
 .project-container-right {
