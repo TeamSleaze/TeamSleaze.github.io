@@ -5,6 +5,8 @@
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     padding: 15px 15px 0 15px;
     max-width: 48rem;
     margin-left: auto;
@@ -15,6 +17,8 @@
 }
 
 .content-latest-update {
+    display: flex;
+    flex-direction: column;
     padding: 0 15px 15px 15px;
     margin: 0 auto 60px auto;
     max-width: 48rem;
@@ -69,6 +73,7 @@ h6 {
 
 p {
     font-size: 1em;
+    margin: 6px 0;
 }
 
 strong {
@@ -359,7 +364,7 @@ mark {
 .blog-item-type-date {
     display: flex;
     flex-direction: row;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .blog-item-date {
@@ -483,6 +488,10 @@ footer {
 
     list-style-type: none;
     padding: 0 20px;
+}
+
+.social-links a {
+    color: var(--color-text-secondary);
 }
 
 .body {

@@ -130,6 +130,10 @@ footer {
     padding: 0 20px;
 }
 
+.social-links a {
+    color: var(--color-text-secondary);
+}
+
 .body {
     display: flex;
     flex-direction: column;
