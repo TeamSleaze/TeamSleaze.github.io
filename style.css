@@ -68,6 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 header {
@@ -204,6 +205,14 @@ footer {
 }
 
 .button-container {
+    flex-direction: column;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.65rem;
+}
+
+.button-container .row {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -300,7 +309,7 @@ footer {
 
 
 .about {
-    padding: 1rem 0 2.5rem;
+    padding: 0.5rem 0 1.25rem 0;
 }
 
 .projects {
@@ -586,3 +595,81 @@ a.overlay {
   background: rgb(95, 95, 95)242;
 }
 
+/* TeamSleaze Page - Projects Cards */
+.cards{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 2.5rem;
+    width: 80%;
+}
+.cards .card{
+    border-radius: 10px;
+    
+    box-shadow: 0 0 30px black;
+    background-color: var(--color-foreground);
+}
+.cards .container{
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.cards img {
+    display: block;
+    width: 100%;
+
+    border-radius: 10px 10px 0 0;
+}
+.cards .container:after {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 10px 10px 0 0;
+    opacity: 0.7;
+}
+
+.cards .details {
+    padding: 20px 10px;
+    text-align: left;
+}
+
+.cards .details a {
+    margin: 10px 0;
+    padding-left: 20px;
+    
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+    color: var(--color-text-primary);
+}
+
+.cards .details .description {
+    padding: 8px 0 0 0;
+    text-align: left;
+}
+
+.cards .details .description p {
+    padding: 0 20px;
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 25px;
+    
+    color: var(--color-text-secondary);
+}
+
+/* Card IDs */
+#card-neuron {
+    background-color: #dec874;
+}
+
+#card-basic-universe-simulation {
+    background-color: #dec874;
+}
+
+#card-vanilla-addons {
+    background-color: #dec874;
+}

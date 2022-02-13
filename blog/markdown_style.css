@@ -546,6 +546,7 @@ footer {
 }
 
 .item {
+    display: flex;
     border-radius: var(--control-corner-radius);
     color: var(--text-color-primary);
     justify-content: center;
