@@ -637,6 +637,10 @@ a.overlay {
 }
 
 .cards .details a {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
     margin: 10px 0;
     padding-left: 20px;
     
@@ -644,6 +648,11 @@ a.overlay {
     font-weight: 600;
     
     color: var(--color-text-primary);
+}
+
+.cards .details a i {
+    font-size: 1rem;
+    padding: 0.4rem 0 0 0.5rem;
 }
 
 .cards .details .description {
@@ -672,4 +681,34 @@ a.overlay {
 
 #card-vanilla-addons {
     background-color: #dec874;
+}
+
+
+/* Neuron Page */
+.neuron {
+    margin: 0rem 5rem;
+}
+
+.neuron-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.neuron-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+.neuron-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.neuron-row .neuron-column {
+    align-items: flex-start;
+    gap: 0;
 }
