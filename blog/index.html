@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="/style.css" rel="stylesheet">
-    <script defer src="/blog/post/js/setParameters.js"></script>
     <script defer src="https://kit.fontawesome.com/e550f88b2c.js" crossorigin="anonymous"></script>
+    <script defer src="/blog/post/js/setParameters.js"></script>
+    <script defer src="/blog/post/js/copyrightYear.js"></script>
     <title>Blog - Sleaze</title>
     <link rel="icon" href="/assets/Favicon.svg" type="image/svg+xml">
 </head>
@@ -92,11 +93,13 @@
             </section>
         </div>
 
+        <div class="background-waves">
+            <div class="overlap"></div>
+        </div>
+
         <footer>
             <span class="copyright">
-                <span>©
-                    <script>document.write(new Date().getFullYear())</script> SleazeStiKs
-                </span>
+                <span>© <span id="copyrightYear">copyrightYear();</span> TeamSleaze</span>
                 <span>All rights reserved.</span>
             </span>
 

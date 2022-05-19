@@ -7,6 +7,7 @@
 
     <link href="/blog/markdown_style.css" rel="stylesheet">
     <script defer src="https://kit.fontawesome.com/e550f88b2c.js" crossorigin="anonymous"></script>
+    <script defer src="/blog/post/js/copyrightYear.js"></script>
     <title>Blog Post - Sleaze</title>
     <link rel="icon" href="/assets/Favicon.svg" type="image/svg+xml">
 </head>
@@ -135,14 +136,41 @@
                         </div>
                     </div>
                 </div>
+                <div class="blog-item">
+                    <a class="overlay" id="params-link" onclick="addParameter('creating-the-blog');"></a>
+                    <h2 class="blog-item-title" id="blog-title">My journey with Unreal Engine 5</h2>
+                    <span class="blog-item-subtitle">
+                
+                    </span>
+                    <span class="blog-item-content fade-text" id="blog-content">
+                        Hi, I finally got around to creating a blog so I can document
+                        my work and stop making excuses for why I can't finish doing stuff.
+                        This Blog was made with pure HTML, CSS and Javascript. As you might
+                        have noticed, all blogs are redirected to the same page but with
+                        different content. This is done by using query strings. I use javascript
+                        to generate the links with the query parameters:
+                    </span>
+                    <!--<script src="/blog/post/js/setContent.js"></script>-->
+                    <div class="blog-item-type-date-latest">
+                        <div class="blog-item-type">
+                            <span class="dev-blog">
+                                Dev Blog
+                            </span>
+                        </div>
+                        <div class="blog-item-hyphen">
+                            <span>-</span>
+                        </div>
+                        <div class="blog-item-date">
+                            <span>19.05.2022</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <footer>
             <span class="copyright">
-                <span>©
-                    <script>document.write(new Date().getFullYear())</script> SleazeStiKs
-                </span>
+                <span>© <span id="copyrightYear">copyrightYear();</span> TeamSleaze</span>
                 <span>All rights reserved.</span>
             </span>
 
